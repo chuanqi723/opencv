@@ -118,8 +118,9 @@ cmake .. \
 	-DWITH_IMGCODEC_PXM=OFF \
 	-DWITH_QUIRC=OFF \
 	-DWITH_TENGINE=OFF \
-	-DCMAKE_C_FLAGS="-Wl,--gc-sections,--no-whole-archive -Os -ffunction-sections -fdata-sections -Wl,--gc-sections,--no-whole-archive" \
- 	-DCMAKE_CXX_FLAGS="-Wl,--gc-sections,--no-whole-archive -Os -ffunction-sections -fdata-sections -Wl,--gc-sections,--no-whole-archive"
+	-DCMAKE_C_COMPILER=gcc \
+	-DCMAKE_CXX_COMPILER=g++
+
 
 
 
